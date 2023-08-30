@@ -54,7 +54,7 @@ img {
 }
 
 .header-page {
-  border-bottom: 1 px solid var(--cloud);
+  border-bottom: 1px solid var(--cloud);
 }
 
 .header-container {
@@ -141,7 +141,18 @@ img {
   background-color: var(--navyblue);
   color: white;
   text-align: center;
+  padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .title-section-one {
@@ -149,9 +160,9 @@ img {
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 1.0714;
   letter-spacing: 1.12px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 
 .section-one .button {
@@ -186,6 +197,37 @@ img {
 .features-list-items {
   width: 264px;
   flex-basis: calc(100% / 4 - 30px);
+}
+
+.features-title::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-color: var(--cloud);
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/antenna-1.svg);
+  background-repeat: no-repeat;
+}
+
+.clock::before {
+  background-image: url(../images/clock-1.svg);
+  background-repeat: no-repeat;
+}
+
+.diagram::before {
+  background-image: url(../images/diagram-1.svg);
+  background-repeat: no-repeat;
+}
+
+.astronaut::before {
+  background-image: url(../images/astronaut-1.svg);
+  background-repeat: no-repeat;
 }
 
 .features-title {
@@ -375,7 +417,7 @@ img {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  border: 1px solid var(--white);
+  border: 1px solid var(--cloud);
   border-top: 0;
   background: var(--white, #fff);
 }
@@ -387,4 +429,20 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.section-five {
+  background-color: var(--white);
+  color: var(--navyblue);
+  text-align: center;
+}
+
+.product-item:hover {
+  box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
+    0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
+}
+
+.button-filter:hover {
+  box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
+    0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
 }
