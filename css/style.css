@@ -497,6 +497,11 @@ img {
   height: 100px;
 }
 
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--iris);
+}
+
 .social-media-list {
   display: flex;
   padding: 0;
