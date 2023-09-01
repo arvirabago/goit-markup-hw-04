@@ -14,6 +14,7 @@ p {
   --cloud: #f4f4fd;
   --ocean: #404bbf;
   --lightslate: #8e8f99;
+  --green: #31d0aa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -341,7 +342,6 @@ img {
 }
 
 .footer-page .footer-description {
-  margin-top: 16px;
   color: var(--white);
 }
 
@@ -497,15 +497,17 @@ img {
   height: 100px;
 }
 
-.footer-socials {
-  align-items: center;
-  justify-content: center;
+.social-media-list {
   display: flex;
-  gap: 16px;
   padding: 0;
+  gap: 16px;
 }
 
-.socials-link {
+.social-media {
+  margin-left: 70px;
+}
+
+.social-media-link {
   --diameter: 44px;
   display: inline-flex;
   justify-content: space-evenly;
@@ -516,11 +518,45 @@ img {
   background: var(--iris);
 }
 
-.socials-icon {
+.social-media-title {
+  color: var(--white);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.social-media-icon-svg {
   fill: var(--white);
 }
 
-.social-media-title {
+.footer-division {
+  display: flex;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
   color: var(--white);
-  text-align: center;
+  background-color: var(--green);
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .logo-span {
+  color: var(--white);
+}
+
+.team-social-media-link:hover,
+.team-social-media-link:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+.clients-link:hover svg {
+  fill: var(--iris);
 }
