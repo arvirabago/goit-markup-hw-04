@@ -13,6 +13,7 @@ p {
   --iris: #4d5ae5;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
+  --lightslate: #8e8f99;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -474,4 +475,52 @@ img {
   height: var(--diameter);
   border-radius: 50%;
   background: var(--iris);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-logo {
+  fill: var(--lightslate);
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+  width: 170px;
+  height: 100px;
+}
+
+.footer-socials {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.socials-link {
+  --diameter: 44px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  background: var(--iris);
+}
+
+.socials-icon {
+  fill: var(--white);
+}
+
+.social-media-title {
+  color: var(--white);
+  text-align: center;
 }
